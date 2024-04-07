@@ -1,0 +1,158 @@
+/* Estilos generales */
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: "Roboto", sans-serif;
+}
+
+/* Estilos Grid */
+.grid-areas {
+ display: grid;
+ /* Grid de 1cx3r */
+ grid-template-columns: 1fr;
+ grid-template-rows: 100px auto 200px;
+ grid-template-areas:
+  "header"
+  "content"
+  "content"
+  "footer";
+}
+
+.header {
+ grid-area: header;
+}
+
+.content {
+ grid-area: content;
+}
+
+.footer {
+ grid-area: footer;
+}
+
+/* Estilos Header */
+.header {
+ background-color: rgb(52, 52, 231);
+ color: white;
+ display: flex;
+ justify-content: center;
+}
+
+.header h1 {
+ background-color: rgb(52, 52, 231);
+ color: white;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 1rem;
+}
+
+h2 {
+ background-color: rgb(107, 107, 255);
+ color: white;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 1rem;
+}
+
+/* Estilos Cards de los productos */
+.product-card {
+ display: inline-flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: space-evenly;
+ padding: 2rem;
+ gap: 2rem;
+}
+
+.card,
+.products,
+.products h3,
+.products p {
+ background-color: white;
+}
+
+.card img {
+ width: 450px;
+ height: auto;
+ cursor: pointer;
+}
+
+.border,
+.border h3,
+.border p {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 0.5rem;
+}
+
+.contador,
+.contador h3,
+.contador p {
+ display: flex;
+ justify-content: space-evenly;
+ align-items: center;
+ padding: 0.5rem;
+}
+
+.password,
+.password h3,
+.password p {
+ display: flex;
+ justify-content: space-evenly;
+ align-items: center;
+ padding: 0.5rem;
+}
+
+.btn,
+.button,
+.h3 {
+ background-color: #ddd;
+ width: 200px;
+ border: none;
+ color: black;
+ padding: 10px 20px;
+ display: flex;
+ justify-content: center;
+ text-align: center;
+ text-decoration: none;
+ margin: 4px 2px;
+ cursor: pointer;
+ border-radius: 16px;
+}
+
+.btn h3,
+.button {
+ background-color: #ddd;
+ color: black;
+}
+
+.valor {
+ background-color: #ddd;
+ width: 150px;
+ border: none;
+ color: black;
+ padding: 20px 20px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ text-align: center;
+ text-decoration: none;
+ margin: 4px 2px;
+ border-radius: 16px;
+}
+
+/* Estilos Footer */
+.footer {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding: 2rem;
+}
+
+.container {
+ padding-bottom: 1rem;
+}
